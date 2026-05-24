@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ساحة الآراء المخفية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-nebula"></div>
+
+    <div class="main-container">
+        <!-- كارت الإرسال -->
+        <div class="glass-box">
+            <h2>قول رأيك بصراحة</h2>
+            <input type="text" id="user" placeholder="الإسم المستعار">
+            <textarea id="msg" placeholder="الرسالة"></textarea>
+            <button class="shield-btn" onclick="sendToPython()">أرسل</button>
+        </div>
+
+        <!-- كارت العرض -->
+        <div class="glass-box">
+            <h2>شوف رسائلك</h2>
+            <div class="lock-icon">🔒</div>
+            <p>رمز الدخول</p>
+            <input type="password" id="pin" placeholder="•••••">
+            <button class="shield-btn" onclick="checkPin()">افتح</button>
+            <div id="messages-list" style="margin-top:20px; display:none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
